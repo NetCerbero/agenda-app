@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="@android:color/transparent"
+        card_view:cardElevation="0dp"
+        android:id="@+id/cardViewMensaje"
+        >
+
+        <LinearLayout
+            android:id="@+id/contenedor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:background="@drawable/out_message_bg"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/msTexto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="240sp"
+                android:text="Hola Amigos como" />
+
+            <TextView
+                android:id="@+id/msHora"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12:00 pm"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
